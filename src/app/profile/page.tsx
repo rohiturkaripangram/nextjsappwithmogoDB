@@ -21,7 +21,6 @@ const Profile = () => {
 
   const getUserDetails = async () => {
     const response = await axios.get("/api/users/accountuser");
-    console.log(response.data);
     setData(response.data.data._id);
   };
 
